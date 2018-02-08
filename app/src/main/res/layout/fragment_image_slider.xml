@@ -46,6 +46,9 @@
             android:layout_alignParentLeft="true"
             android:textColor="@android:color/white" />
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/share"
             android:layout_marginTop="15dp"
@@ -56,12 +59,15 @@
 
         <ImageView
             android:id="@+id/download"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="38dp"
             android:layout_width="wrap_content"
-            android:visibility="gone"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_cloud_download_black_24dp" />
-
+            android:src="@drawable/ic_cloud_download_black_24dp"
+            android:layout_marginStart="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/share"
+            android:layout_toEndOf="@+id/share" />
+        </RelativeLayout>
     </LinearLayout>
 
 </RelativeLayout>
